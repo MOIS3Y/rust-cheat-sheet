@@ -6,7 +6,9 @@
 mod advanced;
 mod basics;
 mod collections;
+mod ownership;
 mod std_lib;
+mod types;
 
 fn main() {
     println!("=== RUST TUTORIAL ===\n");
@@ -180,6 +182,101 @@ fn main() {
     std_lib::fs::remove_file_op();
     std_lib::fs::remove_dir_all_op();
     println!("🦀 Filesystem examples passed\n");
+
+    // Ownership: Move Semantics
+    println!("--- Move Semantics ---");
+    ownership::move_semantics::move_ownership();
+    ownership::move_semantics::move_into_function();
+    ownership::move_semantics::move_out_of_function();
+    ownership::move_semantics::move_and_return();
+    ownership::move_semantics::copy_types();
+    ownership::move_semantics::clone_instead_of_move();
+    ownership::move_semantics::move_struct();
+    ownership::move_semantics::move_enum();
+    ownership::move_semantics::partial_move();
+    ownership::move_semantics::move_nested();
+    println!("🦀 Move Semantics examples passed\n");
+
+    // Ownership: Borrowing
+    println!("--- Borrowing ---");
+    ownership::borrowing::immutable_borrow();
+    ownership::borrowing::mutable_borrow();
+    ownership::borrowing::borrow_rules();
+    ownership::borrowing::deref_coercion();
+    ownership::borrowing::borrow_in_function();
+    ownership::borrowing::mutable_borrow_in_function();
+    ownership::borrowing::slice_borrow();
+    ownership::borrowing::borrow_with_methods();
+    println!("🦀 Borrowing examples passed\n");
+
+    // Ownership: Lifetimes
+    println!("--- Lifetimes ---");
+    ownership::lifetimes::lifetime_elision();
+    ownership::lifetimes::explicit_lifetime();
+    ownership::lifetimes::lifetime_with_struct();
+    ownership::lifetimes::lifetime_with_impl();
+    ownership::lifetimes::multiple_lifetimes();
+    ownership::lifetimes::static_lifetime();
+    ownership::lifetimes::lifetime_bounds();
+    println!("🦀 Lifetimes examples passed\n");
+
+    // Types: Structs
+    println!("--- Structs ---");
+    types::structs::classic_struct();
+    types::structs::tuple_struct();
+    types::structs::unit_struct();
+    types::structs::struct_update();
+    types::structs::struct_destructure();
+    types::structs::mutable_struct();
+    types::structs::struct_methods();
+    types::structs::associated_function();
+    types::structs::struct_with_traits();
+    types::structs::struct_with_display();
+    types::structs::multiple_impl_blocks();
+    types::structs::struct_init_shorthand();
+    types::structs::newtype_pattern();
+    println!("🦀 Structs examples passed\n");
+
+    // Types: Enums
+    println!("--- Enums ---");
+    types::enums::simple_enum();
+    types::enums::enum_with_data();
+    types::enums::option_enum();
+    types::enums::result_enum();
+    types::enums::enum_methods();
+    types::enums::enum_next();
+    types::enums::nullable_pattern();
+    types::enums::enum_with_traits();
+    types::enums::enum_with_display();
+    println!("🦀 Enums examples passed\n");
+
+    // Types: Pattern Matching
+    println!("--- Pattern Matching ---");
+    types::pattern_matching::basic_match();
+    types::pattern_matching::match_with_enum();
+    types::pattern_matching::match_guards();
+    types::pattern_matching::at_patterns();
+    types::pattern_matching::if_let();
+    types::pattern_matching::while_let();
+    types::pattern_matching::destructure_tuple();
+    types::pattern_matching::destructure_struct();
+    types::pattern_matching::nested_destructure();
+    types::pattern_matching::ignore_with_underscore();
+    types::pattern_matching::match_ranges();
+    println!("🦀 Pattern Matching examples passed\n");
+
+    // Types: Custom Traits
+    println!("--- Custom Traits ---");
+    types::custom_traits::simple_trait();
+    types::custom_traits::trait_with_default();
+    types::custom_traits::trait_bounds();
+    types::custom_traits::multiple_trait_bounds();
+    types::custom_traits::where_clause();
+    types::custom_traits::trait_objects();
+    types::custom_traits::associated_types();
+    types::custom_traits::trait_with_lifetime();
+    types::custom_traits::trait_inheritance();
+    println!("🦀 Custom Traits examples passed\n");
 
     println!("🦀 ALL EXAMPLES PASSED 🦀");
 }

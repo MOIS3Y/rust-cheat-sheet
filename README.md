@@ -22,7 +22,6 @@ rust-cheat-sheet/
 │   ├── lib.rs               # Library root — exports modules
 │   │
 │   ├── basics/              # Basic types and operations
-│   │   ├── mod.rs
 │   │   ├── options.rs
 │   │   ├── results.rs
 │   │   ├── strings.rs
@@ -31,20 +30,28 @@ rust-cheat-sheet/
 │   │   └── documentation.rs
 │   │
 │   ├── collections/         # Collection types
-│   │   ├── mod.rs
 │   │   ├── vecs.rs
 │   │   ├── hashmaps.rs
 │   │   └── iterators.rs
 │   │
 │   ├── advanced/            # Advanced features
-│   │   ├── mod.rs
 │   │   ├── smart_pointers.rs
 │   │   └── traits.rs
 │   │
-│   └── std_lib/             # Standard library
-│       ├── mod.rs
-│       ├── time.rs
-│       └── fs.rs
+│   ├── std_lib/             # Standard library
+│   │   ├── time.rs
+│   │   └── fs.rs
+│   │
+│   ├── ownership/           # Ownership system
+│   │   ├── move_semantics.rs
+│   │   ├── borrowing.rs
+│   │   └── lifetimes.rs
+│   │
+│   └── types/               # Custom types
+│       ├── structs.rs
+│       ├── enums.rs
+│       ├── pattern_matching.rs
+│       └── custom_traits.rs
 │
 ├── Cargo.toml
 ├── flake.nix
@@ -124,11 +131,37 @@ Each module contains:
 - Unit tests in `#[cfg(test)]` blocks
 - Doc tests where applicable
 
-Modules are organized by topic:
-- **basics** — fundamental types (Option, Result, String, numbers, slices)
-- **collections** — standard collections (Vec, HashMap, iterators)
-- **advanced** — smart pointers and traits
-- **std_lib** — commonly used standard library modules
+## Topics Covered
+
+### Basics
+- Option, Result — error handling types
+- String, &str — text operations
+- Numbers — arithmetic, overflow handling
+- Arrays, Slices — fixed and dynamic views
+
+### Collections
+- Vec — dynamic arrays
+- HashMap — hash tables
+- Iterators — lazy sequences
+
+### Ownership
+- Move semantics — ownership transfer
+- Borrowing — references without ownership
+- Lifetimes — reference validity
+
+### Types
+- Structs — custom data types
+- Enums — sum types with variants
+- Pattern matching — destructuring syntax
+- Traits — shared behavior
+
+### Advanced
+- Smart pointers — Box, Rc, Arc, RefCell
+- Standard traits — Clone, Default, From/Into
+
+### Standard Library
+- Time — Duration, Instant, SystemTime
+- Filesystem — file and directory operations
 
 ## License
 

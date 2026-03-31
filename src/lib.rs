@@ -9,8 +9,12 @@
 //! - [`collections`] - Collection types: Vec, HashMap, iterators
 //! - [`advanced`] - Advanced features: smart pointers, traits
 //! - [`std_lib`] - Standard library: time, filesystem
+//! - [`ownership`] - Ownership, borrowing, lifetimes
+//! - [`types`] - Structs, enums, pattern matching
 
 pub mod advanced;
 pub mod basics;
 pub mod collections;
+pub mod ownership;
 pub mod std_lib;
+pub mod types;
