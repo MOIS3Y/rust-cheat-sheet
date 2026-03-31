@@ -30,7 +30,8 @@ rust-cheat-sheet/
 │   │   ├── documentation.rs
 │   │   ├── functions.rs
 │   │   ├── conditionals.rs
-│   │   └── loops.rs
+│   │   ├── loops.rs
+│   │   └── closures.rs
 │   │
 │   ├── collections/         # Collection types
 │   │   ├── vecs.rs
@@ -151,6 +152,7 @@ Each module contains:
 - Functions — declaration, closures
 - Conditionals — if, match, if let
 - Loops — loop, while, for
+- Closures — syntax, capture modes, Fn traits
 
 ### Collections
 - Vec — dynamic arrays

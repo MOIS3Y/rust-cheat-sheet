@@ -152,6 +152,28 @@ fn main() {
     basics::loops::for_over_chars();
     println!("🦀 Loops examples passed\n");
 
+    // Basics: Closures
+    println!("--- Closures ---");
+    basics::closures::closure_basic();
+    basics::closures::closure_multiple_params();
+    basics::closures::closure_type_annotations();
+    basics::closures::closure_block_body();
+    basics::closures::closure_capture_ref();
+    basics::closures::closure_capture_mut();
+    basics::closures::closure_move();
+    basics::closures::fn_once_trait();
+    basics::closures::fn_mut_trait();
+    basics::closures::fn_trait();
+    basics::closures::closure_as_param();
+    basics::closures::closure_return_closure();
+    basics::closures::closure_in_struct();
+    basics::closures::closure_with_iterators();
+    basics::closures::closure_with_filter();
+    basics::closures::closure_with_fold();
+    basics::closures::closure_chain();
+    basics::closures::closure_move_for_thread();
+    println!("🦀 Closures examples passed\n");
+
     // Error Handling: Question Mark
     println!("--- Error Handling ---");
     error_handling::question_mark::question_mark_env();

@@ -10,8 +10,10 @@
 //! - Functions
 //! - Conditionals (`if`, `match`)
 //! - Loops (`loop`, `while`, `for`)
+//! - Closures
 
 pub mod arrays_slices;
+pub mod closures;
 pub mod conditionals;
 pub mod documentation;
 pub mod functions;
