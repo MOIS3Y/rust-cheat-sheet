@@ -7,6 +7,7 @@
 //!
 //! - [`basics`] - Basic types: Option, Result, String, numbers, slices
 //! - [`collections`] - Collection types: Vec, HashMap, iterators
+//! - [`error_handling`] - Error handling: `?`, `From`, custom errors
 //! - [`advanced`] - Advanced features: smart pointers, traits
 //! - [`std_lib`] - Standard library: time, filesystem
 //! - [`ownership`] - Ownership, borrowing, lifetimes
@@ -15,6 +16,7 @@
 pub mod advanced;
 pub mod basics;
 pub mod collections;
+pub mod error_handling;
 pub mod ownership;
 pub mod std_lib;
 pub mod types;

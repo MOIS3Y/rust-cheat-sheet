@@ -37,6 +37,12 @@ rust-cheat-sheet/
 │   │   ├── hashmaps.rs
 │   │   └── iterators.rs
 │   │
+│   ├── error_handling/      # Error handling
+│   │   ├── question_mark.rs
+│   │   ├── from_trait.rs
+│   │   ├── custom_error.rs
+│   │   └── box_dyn_error.rs
+│   │
 │   ├── advanced/            # Advanced features
 │   │   ├── smart_pointers.rs
 │   │   └── traits.rs
@@ -149,6 +155,12 @@ Each module contains:
 - Vec — dynamic arrays
 - HashMap — hash tables
 - Iterators — lazy sequences
+
+### Error Handling
+- Question mark — error propagation with `?`
+- From trait — automatic error conversion
+- Custom errors — defining error types
+- Box<dyn Error> — type-erased errors
 
 ### Ownership
 - Move semantics — ownership transfer

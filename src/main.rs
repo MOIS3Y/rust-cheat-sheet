@@ -6,6 +6,7 @@
 mod advanced;
 mod basics;
 mod collections;
+mod error_handling;
 mod ownership;
 mod std_lib;
 mod types;
@@ -150,6 +151,46 @@ fn main() {
     basics::loops::loop_labels();
     basics::loops::for_over_chars();
     println!("🦀 Loops examples passed\n");
+
+    // Error Handling: Question Mark
+    println!("--- Error Handling ---");
+    error_handling::question_mark::question_mark_env();
+    error_handling::question_mark::question_mark_parse();
+    error_handling::question_mark::question_mark_chain();
+    error_handling::question_mark::question_mark_option();
+    error_handling::question_mark::question_mark_in_main();
+    error_handling::question_mark::question_mark_map_err();
+    error_handling::question_mark::question_mark_vs_match();
+    println!("🦀 Question Mark examples passed\n");
+
+    // Error Handling: From Trait
+    println!("--- From Trait ---");
+    error_handling::from_trait::from_parse_int();
+    error_handling::from_trait::from_multiple_sources();
+    error_handling::from_trait::from_custom_conversion();
+    error_handling::from_trait::from_infallible();
+    error_handling::from_trait::from_vs_map_err();
+    println!("🦀 From Trait examples passed\n");
+
+    // Error Handling: Custom Error
+    println!("--- Custom Error ---");
+    error_handling::custom_error::custom_error_with_context();
+    error_handling::custom_error::custom_error_validation();
+    error_handling::custom_error::custom_error_service();
+    error_handling::custom_error::custom_error_display();
+    error_handling::custom_error::custom_error_trait();
+    error_handling::custom_error::custom_error_matching();
+    println!("🦀 Custom Error examples passed\n");
+
+    // Error Handling: Box dyn Error
+    println!("--- Box<dyn Error> ---");
+    error_handling::box_dyn_error::box_dyn_error_basic();
+    error_handling::box_dyn_error::box_dyn_error_multiple();
+    error_handling::box_dyn_error::box_dyn_error_source();
+    error_handling::box_dyn_error::box_dyn_error_send_sync();
+    error_handling::box_dyn_error::box_dyn_error_tradeoffs();
+    error_handling::box_dyn_error::box_dyn_error_conversion();
+    println!("🦀 Box<dyn Error> examples passed\n");
 
     // Collections: Vec
     println!("--- Vec ---");
