@@ -96,6 +96,61 @@ fn main() {
     basics::documentation::safe_divide(10, 2);
     println!("🦀 Documentation examples passed\n");
 
+    // Basics: Functions
+    println!("--- Functions ---");
+    basics::functions::function_no_params();
+    basics::functions::function_single_param();
+    basics::functions::function_multiple_params();
+    basics::functions::function_return_type();
+    basics::functions::function_return_expression();
+    basics::functions::function_early_return();
+    basics::functions::function_return_tuple();
+    basics::functions::function_mutable_param();
+    basics::functions::function_reference_param();
+    basics::functions::function_mutable_ref_param();
+    basics::functions::function_const_param();
+    basics::functions::function_recursive();
+    basics::functions::closure_no_capture();
+    basics::functions::closure_capture_ref();
+    basics::functions::closure_capture_mut();
+    basics::functions::closure_move();
+    basics::functions::function_as_parameter();
+    basics::functions::function_return_closure();
+    basics::functions::function_diverging();
+    println!("🦀 Functions examples passed\n");
+
+    // Basics: Conditionals
+    println!("--- Conditionals ---");
+    basics::conditionals::if_simple();
+    basics::conditionals::if_else_value();
+    basics::conditionals::else_if_chain();
+    basics::conditionals::if_multiple_conditions();
+    basics::conditionals::if_let_option();
+    basics::conditionals::if_let_with_else();
+    basics::conditionals::match_basic();
+    basics::conditionals::match_multiple_patterns();
+    basics::conditionals::match_with_guards();
+    basics::conditionals::match_destructure_tuple();
+    basics::conditionals::matches_macro();
+    basics::conditionals::matches_with_guard();
+    println!("🦀 Conditionals examples passed\n");
+
+    // Basics: Loops
+    println!("--- Loops ---");
+    basics::loops::loop_with_break();
+    basics::loops::loop_return_value();
+    basics::loops::while_loop();
+    basics::loops::while_countdown();
+    basics::loops::for_over_range();
+    basics::loops::for_over_array();
+    basics::loops::for_with_reference();
+    basics::loops::for_with_enumerate();
+    basics::loops::continue_keyword();
+    basics::loops::nested_loops();
+    basics::loops::loop_labels();
+    basics::loops::for_over_chars();
+    println!("🦀 Loops examples passed\n");
+
     // Collections: Vec
     println!("--- Vec ---");
     collections::vecs::create_empty();

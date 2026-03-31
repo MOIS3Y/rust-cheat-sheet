@@ -7,9 +7,15 @@
 //! - Numeric types and operations
 //! - Arrays and slices
 //! - Documentation patterns
+//! - Functions
+//! - Conditionals (`if`, `match`)
+//! - Loops (`loop`, `while`, `for`)
 
 pub mod arrays_slices;
+pub mod conditionals;
 pub mod documentation;
+pub mod functions;
+pub mod loops;
 pub mod numbers;
 pub mod options;
 pub mod results;

@@ -27,7 +27,10 @@ rust-cheat-sheet/
 │   │   ├── strings.rs
 │   │   ├── numbers.rs
 │   │   ├── arrays_slices.rs
-│   │   └── documentation.rs
+│   │   ├── documentation.rs
+│   │   ├── functions.rs
+│   │   ├── conditionals.rs
+│   │   └── loops.rs
 │   │
 │   ├── collections/         # Collection types
 │   │   ├── vecs.rs
@@ -138,6 +141,9 @@ Each module contains:
 - String, &str — text operations
 - Numbers — arithmetic, overflow handling
 - Arrays, Slices — fixed and dynamic views
+- Functions — declaration, closures
+- Conditionals — if, match, if let
+- Loops — loop, while, for
 
 ### Collections
 - Vec — dynamic arrays
