@@ -361,6 +361,24 @@ fn main() {
     types::pattern_matching::match_ranges();
     println!("🦀 Pattern Matching examples passed\n");
 
+    // Types: Generics
+    println!("--- Generics ---");
+    types::generics::generic_function();
+    types::generics::generic_multiple_types();
+    types::generics::generic_struct();
+    types::generics::generic_struct_multiple();
+    types::generics::generic_enum();
+    types::generics::trait_bound_function();
+    types::generics::impl_trait_syntax();
+    types::generics::where_clause();
+    types::generics::generic_impl();
+    types::generics::impl_specific_type();
+    types::generics::associated_types();
+    types::generics::const_generics();
+    types::generics::generic_array_struct();
+    types::generics::lifetime_with_generics();
+    println!("🦀 Generics examples passed\n");
+
     // Types: Custom Traits
     println!("--- Custom Traits ---");
     types::custom_traits::simple_trait();

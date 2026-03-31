@@ -5,8 +5,10 @@
 //! - Enums
 //! - Pattern matching
 //! - Custom traits
+//! - Generics
 
 pub mod custom_traits;
 pub mod enums;
+pub mod generics;
 pub mod pattern_matching;
 pub mod structs;

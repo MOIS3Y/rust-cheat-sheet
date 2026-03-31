@@ -60,7 +60,8 @@ rust-cheat-sheet/
 │       ├── structs.rs
 │       ├── enums.rs
 │       ├── pattern_matching.rs
-│       └── custom_traits.rs
+│       ├── custom_traits.rs
+│       └── generics.rs
 │
 ├── Cargo.toml
 ├── flake.nix
@@ -172,6 +173,7 @@ Each module contains:
 - Enums — sum types with variants
 - Pattern matching — destructuring syntax
 - Traits — shared behavior
+- Generics — type parameters, trait bounds, where clause
 
 ### Advanced
 - Smart pointers — Box, Rc, Arc, RefCell
