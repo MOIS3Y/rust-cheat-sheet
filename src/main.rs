@@ -7,6 +7,7 @@ mod advanced;
 mod basics;
 mod collections;
 mod error_handling;
+mod macros;
 mod ownership;
 mod std_lib;
 mod types;
@@ -413,6 +414,91 @@ fn main() {
     types::custom_traits::trait_with_lifetime();
     types::custom_traits::trait_inheritance();
     println!("🦀 Custom Traits examples passed\n");
+
+    // Macros: Declarative
+    println!("--- Macros: Declarative ---");
+    macros::declarative::macro_simple();
+    macros::declarative::macro_with_expr();
+    macros::declarative::macro_multiple_params();
+    macros::declarative::macro_with_ident();
+    macros::declarative::macro_repetition_zero_or_more();
+    macros::declarative::macro_repetition_one_or_more();
+    macros::declarative::macro_trailing_comma();
+    macros::declarative::macro_return_value();
+    macros::declarative::macro_with_block();
+    macros::declarative::macro_with_lifetime();
+    macros::declarative::macro_with_type();
+    println!("🦀 Declarative macros examples passed\n");
+
+    // Macros: Built-in
+    println!("--- Macros: Built-in ---");
+    macros::built_in::println_macro();
+    macros::built_in::format_macro();
+    macros::built_in::print_macro();
+    macros::built_in::eprintln_macro();
+    macros::built_in::dbg_macro();
+    macros::built_in::assert_macro();
+    macros::built_in::assert_with_message();
+    macros::built_in::assert_eq_macro();
+    macros::built_in::assert_ne_macro();
+    macros::built_in::unreachable_macro();
+    macros::built_in::concat_macro();
+    macros::built_in::stringify_macro();
+    macros::built_in::env_macro();
+    macros::built_in::option_env_macro();
+    macros::built_in::include_str_macro();
+    macros::built_in::vec_macro();
+    macros::built_in::matches_macro();
+    println!("🦀 Built-in macros examples passed\n");
+
+    // Macros: Formatting
+    println!("--- Macros: Formatting ---");
+    macros::formatting::format_basic();
+    macros::formatting::format_debug();
+    macros::formatting::format_debug_pretty();
+    macros::formatting::format_display();
+    macros::formatting::format_binary();
+    macros::formatting::format_octal();
+    macros::formatting::format_hex();
+    macros::formatting::format_hex_prefix();
+    macros::formatting::format_float_default();
+    macros::formatting::format_float_precision();
+    macros::formatting::format_float_width_precision();
+    macros::formatting::format_scientific();
+    macros::formatting::format_pointer();
+    macros::formatting::format_boolean();
+    macros::formatting::format_char();
+    macros::formatting::format_char_escaped();
+    macros::formatting::format_str();
+    macros::formatting::format_str_debug();
+    macros::formatting::format_align_left();
+    macros::formatting::format_align_right();
+    macros::formatting::format_align_center();
+    macros::formatting::format_fill();
+    macros::formatting::format_sign_always();
+    macros::formatting::format_sign_space();
+    macros::formatting::format_zero_pad();
+    macros::formatting::format_width();
+    macros::formatting::format_hex_padded();
+    macros::formatting::format_multiple();
+    macros::formatting::format_dynamic_width();
+    macros::formatting::format_dynamic_precision();
+    macros::formatting::format_without_newline();
+    println!("🦀 Formatting examples passed\n");
+
+    // Macros: Advanced
+    println!("--- Macros: Advanced ---");
+    macros::advanced::macro_multiple_arms();
+    macros::advanced::tt_muncher_pattern();
+    macros::advanced::macro_internal_rules();
+    macros::advanced::macro_generate_struct();
+    macros::advanced::macro_implement_deref();
+    macros::advanced::macro_with_visibility();
+    macros::advanced::macro_define_constants();
+    macros::advanced::macro_literal_pattern();
+    macros::advanced::macro_builder_pattern();
+    macros::advanced::macro_hygiene();
+    println!("🦀 Advanced macros examples passed\n");
 
     println!("🦀 ALL EXAMPLES PASSED 🦀");
 }

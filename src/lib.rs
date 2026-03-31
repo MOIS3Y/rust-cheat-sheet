@@ -12,11 +12,13 @@
 //! - [`std_lib`] - Standard library: time, filesystem
 //! - [`ownership`] - Ownership, borrowing, lifetimes
 //! - [`types`] - Structs, enums, pattern matching
+//! - [`macros`] - Declarative and built-in macros
 
 pub mod advanced;
 pub mod basics;
 pub mod collections;
 pub mod error_handling;
+pub mod macros;
 pub mod ownership;
 pub mod std_lib;
 pub mod types;

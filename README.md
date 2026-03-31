@@ -44,6 +44,12 @@ rust-cheat-sheet/
 │   │   ├── custom_error.rs
 │   │   └── box_dyn_error.rs
 │   │
+│   ├── macros/              # Macros
+│   │   ├── declarative.rs
+│   │   ├── built_in.rs
+│   │   ├── formatting.rs
+│   │   └── advanced.rs
+│   │
 │   ├── advanced/            # Advanced features
 │   │   ├── smart_pointers.rs
 │   │   └── traits.rs
@@ -164,6 +170,12 @@ Each module contains:
 - From trait — automatic error conversion
 - Custom errors — defining error types
 - Box<dyn Error> — type-erased errors
+
+### Macros
+- Declarative — `macro_rules!`, patterns, repetition
+- Built-in — `println!`, `format!`, `dbg!`, `assert!`, `vec!`
+- Formatting — format specifiers, alignment, precision, numeric formats
+- Advanced — TT muncher, code generation, hygiene
 
 ### Ownership
 - Move semantics — ownership transfer
