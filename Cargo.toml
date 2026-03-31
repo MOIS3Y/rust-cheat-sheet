@@ -1,0 +1,25 @@
+[package]
+name = "rust-cheat-sheet"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+
+description = "Interactive Rust methods and patterns cheat sheet"
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/MOIS3Y/rust-cheat-sheet"
+repository = "https://github.com/MOIS3Y/rust-cheat-sheet"
+keywords = ["rust", "cheat-sheet", "tutorial", "examples", "learning"]
+categories = ["development-tools", "education"]
+
+[dependencies]
+
+[profile.dev]
+opt-level = 0
+debug = true
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true

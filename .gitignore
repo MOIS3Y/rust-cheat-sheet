@@ -1,0 +1,56 @@
+# Rust
+/target/
+**/target/
+
+# Build artifacts
+**/*.rs.bk
+*.pdb
+
+# Nix
+/result
+**/result
+
+# Nix build
+result-*
+
+# Environment
+.env
+.envrc
+.direnv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.bak
+
+# macOS
+.DS_Store
+
+# Linux
+Thumbs.db
+
+# Documentation
+target/doc/
+**/target/doc/
+
+# Benchmark results
+criterion/
+
+# Coverage
+*.gcno
+*.gcda
+coverage/
+*.lcov
+tarpaulin-report.html
+
+# Flamegraph
+flamegraph.svg
+perf.data
+perf.data.old
+
+# Temporary files
+*.tmp
+*.temp
